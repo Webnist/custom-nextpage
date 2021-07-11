@@ -128,9 +128,11 @@ class CustomNextPage extends CustomNextPageInit {
 			if ( $page_title ) {
 				$pattern = '/title=["?](.*)["?]/';
 				preg_match( $pattern, $page_title, $matches);
-				$title  = isset( $matches[1] ) ? esc_html( $matches[1] ) : '';
-				$before = apply_filters( 'custom_next_page_beforetext', $this->beforetext );
-				$after  = apply_filters( 'custom_next_page_aftertext', $this->aftertext );
+				$title      = isset( $matches[1] ) ? esc_html( $matches[1] ) : '';
+				$beforetext = ( ! empty( $this->beforetext ) ) ? '<span class="beforetext">' . $this->beforetext . '</span>' : '';
+				$before     = apply_filters( 'custom_next_page_beforetext', $beforetext );
+				$aftertext  = ( ! empty( $this->aftertext ) ) ? '<span class="aftertext">' . $this->aftertext . '</span>' : '';
+				$after      = apply_filters( 'custom_next_page_aftertext', $aftertext );
 				$output .= '<p class="custom-page-links">' ."\n";
 				if ( $page_count <= $numpages ) {
 					$output .= _wp_link_page( $page_count );
