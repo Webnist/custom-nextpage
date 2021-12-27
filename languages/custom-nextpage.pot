@@ -30,7 +30,10 @@ msgstr ""
 msgid "&lt;"
 msgstr ""
 
-#: includes/class-admin-editor.php:54
+#: admin/class-admin-editor.php:56
+#: block/build/index.js:60
+#: block/src/edit.js:38
+#: block/build/index.js:38
 msgid "Title:"
 msgstr ""
 
@@ -175,4 +178,32 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "http://profiles.wordpress.org/webnist"
+msgstr ""
+
+#: block/build/index.js:61
+#: block/src/edit.js:39
+#: block/build/index.js:39
+msgid "Text to put before the title navigation"
+msgstr ""
+
+#: block/build/index.js:65
+#: block/src/edit.js:43
+#: block/build/index.js:43
+msgid "Enter the link text…"
+msgstr ""
+
+#: block/build/index.js:73
+#: block/src/edit.js:56
+#: block/build/index.js:56
+msgid "Option"
+msgstr ""
+
+#: block/block.json
+msgctxt "block title"
+msgid "Custom Nextpage"
+msgstr ""
+
+#: block/block.json
+msgctxt "block description"
+msgid "Block for Custom Next Page shortcode."
 msgstr ""
